@@ -32,8 +32,8 @@ for row in range(rows):
         areas.append((row, col, size))
 
 print(f"Total areas found: {len(areas)}")
-for idx, area in enumerate(sorted(areas, key=lambda a: a[2], reverse=True)):
-    print(f"Area #{idx + 1} at ({area[0]}, {area[1]}), size: {area[2]}")
+for idx, (row, col, size) in enumerate(sorted(areas, key=lambda a: a[2], reverse=True)):
+    print(f"Area #{idx + 1} at ({row}, {col}), size: {size}")
 
 """
 5
