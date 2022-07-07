@@ -1,13 +1,27 @@
-def rev(l):
-    if len(l) == 0:
-        return []
-    return [l[-1]] + rev(l[:-1])
+def reverse_array(idx, elements):
+    if idx == len(elements) // 2:
+        return
+    swap_idx = len(elements) - 1 - idx
+    elements[idx], elements[swap_idx] = elements[swap_idx], elements[idx]
+    reverse_array(idx + 1, elements)
 
 
-l = [int(x) for x in input().split(" ")]
+elements = input().split()
+reverse_array(0, elements)
+print(' '.join(elements))
 
-r = rev(l)
-print(' '.join(str(x) for x in r))
+
+
+# def rev(l):
+#     if len(l) == 0:
+#         return []
+#     return [l[-1]] + rev(l[:-1])
+#
+#
+# l = [int(x) for x in input().split(" ")]
+#
+# r = rev(l)
+# print(' '.join(str(x) for x in r))
 
 """
 
