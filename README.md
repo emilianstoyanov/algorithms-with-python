@@ -1,1 +1,17 @@
-# algorithms-with-python
+
+- Recursion
+- Backtracking
+- Recursion vs Iteration
+- Searching
+- Sorting Algorithms
+- Graph ADS
+- Traversal algorithms - BFS and DFS
+- Connected components
+- Topological sort
+- Minimum spanning tree (Prim, Kruskal)
+- Shortest path (Unweighted graph, Dijkstra, Bellman-Ford)
+- Dynamic Programming
+- Fibonacci
+- Move Down/Right
+- Longest common subsequence
+- Longest increasing subsequence
